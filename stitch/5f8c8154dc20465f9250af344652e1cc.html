@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Record Editor - Runtime Ping</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "tertiary-fixed": "#dae2fd",
+                        "surface-container-highest": "#273647",
+                        "outline-variant": "#3e484f",
+                        "surface-bright": "#2c3a4c",
+                        "surface-container-lowest": "#010f1f",
+                        "on-tertiary-container": "#3c4459",
+                        "secondary-fixed": "#d8e3fb",
+                        "on-primary-fixed": "#001e2c",
+                        "on-error": "#690005",
+                        "primary-fixed": "#c4e7ff",
+                        "on-secondary-container": "#aeb9d0",
+                        "on-error-container": "#ffdad6",
+                        "surface-container-low": "#0d1c2d",
+                        "primary": "#8ed5ff",
+                        "surface-container": "#122131",
+                        "on-primary": "#00354a",
+                        "tertiary-container": "#a9b1ca",
+                        "secondary": "#bcc7de",
+                        "surface": "#051424",
+                        "secondary-fixed-dim": "#bcc7de",
+                        "surface-dim": "#051424",
+                        "on-tertiary-fixed-variant": "#3f465c",
+                        "inverse-primary": "#00668a",
+                        "surface-variant": "#273647",
+                        "secondary-container": "#3e495d",
+                        "on-secondary-fixed": "#111c2d",
+                        "inverse-surface": "#d4e4fa",
+                        "tertiary-fixed-dim": "#bec6e0",
+                        "outline": "#87929a",
+                        "on-tertiary-fixed": "#131b2e",
+                        "on-background": "#d4e4fa",
+                        "primary-container": "#38bdf8",
+                        "tertiary": "#c5cce6",
+                        "on-primary-fixed-variant": "#004c69",
+                        "background": "#051424",
+                        "surface-container-high": "#1c2b3c",
+                        "on-primary-container": "#004965",
+                        "on-surface": "#d4e4fa",
+                        "on-secondary": "#263143",
+                        "error": "#ffb4ab",
+                        "primary-fixed-dim": "#7bd0ff",
+                        "on-secondary-fixed-variant": "#3c475a",
+                        "error-container": "#93000a",
+                        "on-tertiary": "#283044",
+                        "inverse-on-surface": "#233143",
+                        "surface-tint": "#7bd0ff",
+                        "on-surface-variant": "#bdc8d1"
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    spacing: {
+                        "lg": "24px",
+                        "gutter": "12px",
+                        "sm": "8px",
+                        "container-max": "1440px",
+                        "xs": "4px",
+                        "xl": "32px",
+                        "md": "16px",
+                        "unit": "4px"
+                    },
+                    fontFamily: {
+                        "label-caps": ["Geist"],
+                        "headline-sm": ["Geist"],
+                        "body-md": ["Geist"],
+                        "code-sm": ["JetBrains Mono"],
+                        "display-metrics": ["Geist"],
+                        "headline-md": ["Geist"],
+                        "body-sm": ["Geist"]
+                    },
+                    fontSize: {
+                        "label-caps": ["11px", { lineHeight: "16px", letterSpacing: "0.05em", fontWeight: "700" }],
+                        "headline-sm": ["16px", { lineHeight: "24px", fontWeight: "600" }],
+                        "body-md": ["14px", { lineHeight: "20px", fontWeight: "400" }],
+                        "code-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }],
+                        "display-metrics": ["32px", { lineHeight: "40px", letterSpacing: "-0.02em", fontWeight: "600" }],
+                        "headline-md": ["20px", { lineHeight: "28px", fontWeight: "500" }],
+                        "body-sm": ["12px", { lineHeight: "16px", fontWeight: "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        body { background-color: #020617; } /* Deepest navy canvas */
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md min-h-screen flex flex-col md:flex-row">
+<!-- Canvas (Main Content) - Full width since Navigation Shell is suppressed for task-focused view -->
+<main class="flex-1 flex flex-col h-screen overflow-hidden">
+<!-- Header for Editor -->
+<header class="flex justify-between items-center h-16 px-lg w-full bg-surface dark:bg-surface border-b border-outline-variant dark:border-outline-variant shrink-0">
+<div class="flex items-center gap-md">
+<button class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer active:opacity-80 flex items-center justify-center rounded p-xs">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<div class="flex flex-col">
+<span class="font-label-caps text-label-caps text-on-surface-variant">EDITING</span>
+<h1 class="font-headline-sm text-headline-sm text-on-surface">Record Configuration #892-A</h1>
+</div>
+</div>
+<div class="flex items-center gap-md">
+<!-- Unsaved Changes Banner -->
+<div class="flex items-center gap-xs bg-tertiary-container/10 border border-tertiary-container/30 px-sm py-[2px] rounded">
+<span class="material-symbols-outlined text-[14px] text-tertiary-container">info</span>
+<span class="font-body-sm text-body-sm text-tertiary-container">You have unsaved changes</span>
+</div>
+</div>
+</header>
+<!-- Editor Content -->
+<div class="flex-1 overflow-y-auto p-md md:p-lg lg:p-xl flex justify-center">
+<div class="w-full max-w-3xl bg-surface-container-low border border-outline-variant rounded-lg flex flex-col">
+<form class="flex-1 p-md md:p-lg flex flex-col gap-xl">
+<!-- Basic Info Section -->
+<section class="flex flex-col gap-md">
+<div class="flex items-center gap-xs border-b border-outline-variant pb-xs mb-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">data_object</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Metadata</h2>
+</div>
+<!-- Record Name -->
+<div class="flex flex-col gap-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-xs" for="record-name">
+                                Record Name <span class="text-error">*</span>
+</label>
+<input class="bg-[#020617] border border-error rounded px-sm py-xs font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-full" id="record-name" placeholder="e.g. auth-pipeline-v2" type="text" value=""/>
+<span class="font-body-sm text-body-sm text-error flex items-center gap-[2px]">
+<span class="material-symbols-outlined text-[12px]">error</span> Record Name is required
+                            </span>
+</div>
+<!-- Description -->
+<div class="flex flex-col gap-xs">
+<label class="font-body-sm text-body-sm text-on-surface-variant" for="record-desc">Description <span class="text-on-surface-variant/50">(Optional)</span></label>
+<textarea class="bg-[#020617] border border-outline-variant rounded px-sm py-xs font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-full resize-y" id="record-desc" placeholder="Describe the purpose of this record..." rows="2"></textarea>
+</div>
+<!-- Priority Dropdown -->
+<div class="flex flex-col gap-xs w-full sm:w-1/2">
+<label class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-xs" for="record-priority">
+                                Priority <span class="text-error">*</span>
+</label>
+<div class="relative">
+<select class="appearance-none bg-[#020617] border border-outline-variant rounded px-sm py-xs pr-lg font-body-md text-on-surface focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary w-full" id="record-priority">
+<option value="critical">Critical</option>
+<option selected="" value="high">High</option>
+<option value="medium">Medium</option>
+<option value="low">Low</option>
+</select>
+<div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-sm text-on-surface-variant">
+<span class="material-symbols-outlined">expand_more</span>
+</div>
+</div>
+</div>
+</section>
+<!-- JSON Editor Section -->
+<section class="flex flex-col gap-md flex-1">
+<div class="flex items-center gap-xs border-b border-outline-variant pb-xs mb-sm">
+<span class="material-symbols-outlined text-primary text-[18px]">code_blocks</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Configuration JSON</h2>
+</div>
+<div class="flex flex-col gap-xs flex-1 min-h-[300px]">
+<label class="font-body-sm text-body-sm text-on-surface-variant flex items-center justify-between" for="record-json">
+<span>Payload <span class="text-error">*</span></span>
+<span class="font-code-sm text-code-sm text-on-surface-variant/70">Format: JSON</span>
+</label>
+<div class="relative flex-1 flex flex-col bg-[#020617] border border-outline-variant rounded group focus-within:border-primary focus-within:ring-1 focus-within:ring-primary overflow-hidden">
+<textarea class="flex-1 bg-transparent border-none p-sm font-code-sm text-code-sm text-secondary-fixed focus:ring-0 resize-none w-full" id="record-json" spellcheck="false">{
+  "pipeline_id": "auth_flow",
+  "version": "1.4.2",
+  "enabled": true,
+  "thresholds": {
+    "latency_ms": 150,
+    "error_rate": 0.01
+  },
+  "endpoints": [
+    "/api/v1/login",
+    "/api/v1/verify"
+  ]
+}</textarea>
+<!-- Line numbers simulation (visual only) -->
+<div class="absolute left-0 top-0 bottom-0 w-8 bg-[#0F172A] border-r border-outline-variant/30 flex flex-col items-end py-sm pr-xs font-code-sm text-code-sm text-on-surface-variant/40 pointer-events-none">
+<span>1</span><span>2</span><span>3</span><span>4</span><span>5</span><span>6</span><span>7</span><span>8</span><span>9</span><span>10</span><span>11</span><span>12</span>
+</div>
+<style>
+                                    #record-json { padding-left: 2.5rem; }
+                                </style>
+</div>
+</div>
+</section>
+</form>
+<!-- Bottom Action Bar -->
+<div class="bg-surface-variant/30 border-t border-outline-variant p-md flex items-center justify-end gap-sm rounded-b-lg">
+<button class="px-md py-[6px] border border-outline-variant text-on-surface font-body-md rounded hover:bg-surface-container-high transition-colors active:opacity-80">
+                        Cancel Edit
+                    </button>
+<button class="px-md py-[6px] bg-primary text-[#000000] font-headline-sm rounded hover:bg-primary-fixed-dim transition-colors active:opacity-80 flex items-center gap-xs">
+<span class="material-symbols-outlined text-[18px]">save</span>
+                        Save Record
+                    </button>
+</div>
+</div>
+</div>
+</main>
+</body></html>

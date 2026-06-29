@@ -1,0 +1,46 @@
+[
+  {
+    "screenId": "5f8c8154dc20465f9250af344652e1cc",
+    "title": "Record Editor - Runtime Ping Active Rootfix",
+    "htmlFile": "5f8c8154dc20465f9250af344652e1cc.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzM2NWZhMTgyYWM0NTRmMDhiOGNiZmM1MTI5OTk5OTc1EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyODM1NzM5MTI1NDkwNjE2NTUy&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/runtime-ping-active-rootfix-d253d2fa/stitch/5f8c8154dc20465f9250af344652e1cc.html",
+    "surfaceIds": [
+      "SURF_RECORD_EDITOR"
+    ]
+  },
+  {
+    "screenId": "a952026e498a43caa20cb43faf0d7c76",
+    "title": "Insights - Runtime Ping Active Rootfix",
+    "htmlFile": "a952026e498a43caa20cb43faf0d7c76.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2VhNGIyZDkwZjhlOTQwMTBiYzVlYzc5ZDM1OTVkZWU3EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyODM1NzM5MTI1NDkwNjE2NTUy&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/runtime-ping-active-rootfix-d253d2fa/stitch/a952026e498a43caa20cb43faf0d7c76.html",
+    "surfaceIds": [
+      "SURF_INSIGHTS"
+    ]
+  },
+  {
+    "screenId": "feeb6db5869949aa8ab49e6a57043e27",
+    "title": "Pipeline Board - Runtime Ping Active Rootfix",
+    "htmlFile": "feeb6db5869949aa8ab49e6a57043e27.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sX2QwM2IxMmQyMWZiZTQ0NTlhNzQ5MTA1MDQyOGI2YmY5EgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyODM1NzM5MTI1NDkwNjE2NTUy&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/runtime-ping-active-rootfix-d253d2fa/stitch/feeb6db5869949aa8ab49e6a57043e27.html",
+    "surfaceIds": [
+      "SURF_PIPELINE_BOARD"
+    ]
+  },
+  {
+    "screenId": "41999efd12fc4e4dbc4028247462060c",
+    "title": "Record Operations - Runtime Ping Active Rootfix",
+    "htmlFile": "41999efd12fc4e4dbc4028247462060c.html",
+    "deviceType": "DESKTOP",
+    "htmlUrl": "https://contribution.usercontent.google.com/download?c=CgthaWRhX2NvZGVmeBJ7Eh1hcHBfY29tcGFuaW9uX2dlbmVyYXRlZF9maWxlcxpaCiVodG1sXzE0ZGRlODVkZDQ4NTRhYzQ5ZjVlNzY5NjA1MDU1ZTEwEgsSBxCN19Wi9xcYAZIBIwoKcHJvamVjdF9pZBIVQhMyODM1NzM5MTI1NDkwNjE2NTUy&filename=&opi=96797242",
+    "localHtml": "/Users/setrox/projects/runtime-ping-active-rootfix-d253d2fa/stitch/41999efd12fc4e4dbc4028247462060c.html",
+    "surfaceIds": [
+      "SURF_RECORD_OPERATIONS"
+    ]
+  }
+]
