@@ -14,8 +14,12 @@ function isRecord(value: unknown): value is RuntimeRecord {
     typeof r.id === 'string' &&
     r.id.length > 0 &&
     typeof r.name === 'string' &&
+    typeof r.description === 'string' &&
     typeof r.status === 'string' &&
-    ['draft', 'verification', 'deployed', 'failed', 'running'].includes(r.status)
+    ['draft', 'verification', 'deployed', 'failed', 'running'].includes(r.status) &&
+    typeof r.owner === 'string' &&
+    typeof r.createdAt === 'string' &&
+    typeof r.updatedAt === 'string'
   );
 }
 

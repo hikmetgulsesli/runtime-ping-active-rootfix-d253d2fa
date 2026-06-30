@@ -163,6 +163,7 @@ export function RuntimeStoreProvider({ children }: { children: React.ReactNode }
   const [state, dispatch] = useReducer(runtimeReducer, getInitialState());
 
   useEffect(() => {
+    if (state.storageStatus !== 'loading') return;
     let mounted = true;
     try {
       const persisted = loadRuntimeState();
@@ -193,15 +194,6 @@ export function RuntimeStoreProvider({ children }: { children: React.ReactNode }
     return () => {
       mounted = false;
     };
-  }, []);
-
-  useEffect(() => {
-    if (state.storageStatus === 'loading') {
-      const timer = setTimeout(() => {
-        dispatch({ type: 'BOOTSTRAP', payload: {} });
-      }, 0);
-      return () => clearTimeout(timer);
-    }
   }, [state.storageStatus]);
 
   useEffect(() => {
