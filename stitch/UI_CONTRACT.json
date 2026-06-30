@@ -1,0 +1,793 @@
+[
+  {
+    "screenId": "5f8c8154dc20465f9250af344652e1cc",
+    "screenTitle": "Record Editor - Runtime Ping Active Rootfix",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "arrow_back",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "Cancel Edit",
+        "line": 210
+      },
+      {
+        "type": "button",
+        "label": "Record",
+        "line": 213
+      },
+      {
+        "type": "input",
+        "label": "e.g. auth-pipeline-v2",
+        "inputType": "text",
+        "placeholder": "e.g. auth-pipeline-v2",
+        "line": 144
+      },
+      {
+        "type": "input",
+        "label": "Describe the purpose of this record...",
+        "inputType": "textarea",
+        "placeholder": "Describe the purpose of this record...",
+        "line": 152
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 160
+      },
+      {
+        "type": "input",
+        "label": "textarea",
+        "inputType": "textarea",
+        "line": 184
+      },
+      {
+        "type": "form",
+        "label": "form",
+        "line": 132
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "arrow_back",
+        "line": 113
+      },
+      {
+        "type": "button",
+        "label": "Cancel Edit",
+        "line": 210
+      },
+      {
+        "type": "button",
+        "label": "Record",
+        "line": 213
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "e.g. auth-pipeline-v2",
+        "inputType": "text",
+        "placeholder": "e.g. auth-pipeline-v2",
+        "line": 144
+      },
+      {
+        "type": "input",
+        "label": "Describe the purpose of this record...",
+        "inputType": "textarea",
+        "placeholder": "Describe the purpose of this record...",
+        "line": 152
+      },
+      {
+        "type": "input",
+        "label": "select",
+        "inputType": "select",
+        "line": 160
+      },
+      {
+        "type": "input",
+        "label": "textarea",
+        "inputType": "textarea",
+        "line": 184
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 8,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "a952026e498a43caa20cb43faf0d7c76",
+    "screenTitle": "Insights - Runtime Ping Active Rootfix",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "button",
+        "label": "Record Operations",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "Pipeline Board",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "Insights",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "System Logs",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "Support",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "New Operation",
+        "line": 150
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "View All Logs",
+        "line": 308
+      },
+      {
+        "type": "input",
+        "label": "Search resources...",
+        "inputType": "text",
+        "placeholder": "Search resources...",
+        "line": 164
+      }
+    ],
+    "navigation": [],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "Record Operations",
+        "line": 126
+      },
+      {
+        "type": "button",
+        "label": "Pipeline Board",
+        "line": 130
+      },
+      {
+        "type": "button",
+        "label": "Insights",
+        "line": 134
+      },
+      {
+        "type": "button",
+        "label": "System Logs",
+        "line": 140
+      },
+      {
+        "type": "button",
+        "label": "Support",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "New Operation",
+        "line": 150
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 168
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 171
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 174
+      },
+      {
+        "type": "button",
+        "label": "Filter",
+        "line": 191
+      },
+      {
+        "type": "button",
+        "label": "Export Summary",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "View All Logs",
+        "line": 308
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search resources...",
+        "inputType": "text",
+        "placeholder": "Search resources...",
+        "line": 164
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "feeb6db5869949aa8ab49e6a57043e27",
+    "screenTitle": "Pipeline Board - Runtime Ping Active Rootfix",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Pipeline Board",
+        "href": "#",
+        "line": 139
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "System Logs",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "button",
+        "label": "New Operation",
+        "line": 151
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "Promote to Verification",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "Reject",
+        "line": 339
+      },
+      {
+        "type": "button",
+        "label": "Deploy",
+        "line": 342
+      },
+      {
+        "type": "input",
+        "label": "Search records, IDs, or owners...",
+        "inputType": "text",
+        "placeholder": "Search records, IDs, or owners...",
+        "line": 177
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 134
+      },
+      {
+        "type": "link",
+        "label": "Pipeline Board",
+        "href": "#",
+        "line": 139
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 144
+      },
+      {
+        "type": "link",
+        "label": "System Logs",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 159
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Operation",
+        "line": 151
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 182
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 185
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 188
+      },
+      {
+        "type": "button",
+        "label": "Promote to Verification",
+        "line": 299
+      },
+      {
+        "type": "button",
+        "label": "Reject",
+        "line": 339
+      },
+      {
+        "type": "button",
+        "label": "Deploy",
+        "line": 342
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Search records, IDs, or owners...",
+        "inputType": "text",
+        "placeholder": "Search records, IDs, or owners...",
+        "line": 177
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 13,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  },
+  {
+    "screenId": "41999efd12fc4e4dbc4028247462060c",
+    "screenTitle": "Record Operations - Runtime Ping Active Rootfix",
+    "deviceType": "DESKTOP",
+    "elements": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Pipeline Board",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "link",
+        "label": "System Logs",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 170
+      },
+      {
+        "type": "button",
+        "label": "New Operation",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "All",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "Failed",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "Running",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 267
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 308
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 328
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 348
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 368
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 388
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 400
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 403
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 424
+      },
+      {
+        "type": "button",
+        "label": "View Logs",
+        "line": 432
+      },
+      {
+        "type": "button",
+        "label": "Terminate",
+        "line": 435
+      },
+      {
+        "type": "input",
+        "label": "Global search...",
+        "inputType": "text",
+        "placeholder": "Global search...",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "Filter by ID, Owner...",
+        "inputType": "text",
+        "placeholder": "Filter by ID, Owner...",
+        "line": 253
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 280
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 296
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 316
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 336
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 356
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 376
+      }
+    ],
+    "navigation": [
+      {
+        "type": "link",
+        "label": "Record Operations",
+        "href": "#",
+        "line": 151
+      },
+      {
+        "type": "link",
+        "label": "Pipeline Board",
+        "href": "#",
+        "line": 155
+      },
+      {
+        "type": "link",
+        "label": "Insights",
+        "href": "#",
+        "line": 159
+      },
+      {
+        "type": "link",
+        "label": "System Logs",
+        "href": "#",
+        "line": 166
+      },
+      {
+        "type": "link",
+        "label": "Support",
+        "href": "#",
+        "line": 170
+      }
+    ],
+    "buttons": [
+      {
+        "type": "button",
+        "label": "New Operation",
+        "line": 144
+      },
+      {
+        "type": "button",
+        "label": "menu",
+        "line": 181
+      },
+      {
+        "type": "button",
+        "label": "notifications",
+        "line": 192
+      },
+      {
+        "type": "button",
+        "label": "settings",
+        "line": 195
+      },
+      {
+        "type": "button",
+        "label": "help",
+        "line": 198
+      },
+      {
+        "type": "button",
+        "label": "All",
+        "line": 256
+      },
+      {
+        "type": "button",
+        "label": "Failed",
+        "line": 257
+      },
+      {
+        "type": "button",
+        "label": "Running",
+        "line": 258
+      },
+      {
+        "type": "button",
+        "label": "Retry Load",
+        "line": 263
+      },
+      {
+        "type": "button",
+        "label": "Create Record",
+        "line": 267
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 308
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 328
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 348
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 368
+      },
+      {
+        "type": "button",
+        "label": "more_vert",
+        "line": 388
+      },
+      {
+        "type": "button",
+        "label": "chevron_left",
+        "line": 400
+      },
+      {
+        "type": "button",
+        "label": "chevron_right",
+        "line": 403
+      },
+      {
+        "type": "button",
+        "label": "close",
+        "line": 424
+      },
+      {
+        "type": "button",
+        "label": "View Logs",
+        "line": 432
+      },
+      {
+        "type": "button",
+        "label": "Terminate",
+        "line": 435
+      }
+    ],
+    "inputs": [
+      {
+        "type": "input",
+        "label": "Global search...",
+        "inputType": "text",
+        "placeholder": "Global search...",
+        "line": 190
+      },
+      {
+        "type": "input",
+        "label": "Filter by ID, Owner...",
+        "inputType": "text",
+        "placeholder": "Filter by ID, Owner...",
+        "line": 253
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 280
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 296
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 316
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 336
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 356
+      },
+      {
+        "type": "input",
+        "label": "checkbox",
+        "inputType": "checkbox",
+        "line": 376
+      }
+    ],
+    "hardcodedData": [],
+    "totalInteractive": 33,
+    "requiresRouter": false,
+    "requiresDragDrop": false
+  }
+]
