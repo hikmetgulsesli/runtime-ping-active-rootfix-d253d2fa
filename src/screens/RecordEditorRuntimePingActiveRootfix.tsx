@@ -96,7 +96,7 @@ export function RecordEditorRuntimePingActiveRootfix({ actions }: RecordEditorRu
       <span className="font-code-sm text-code-sm text-on-surface-variant/70">Format: JSON</span>
       </label>
       <div className="relative flex-1 flex flex-col bg-[#020617] border border-outline-variant rounded group focus-within:border-primary focus-within:ring-1 focus-within:ring-primary overflow-hidden">
-      <textarea className="flex-1 bg-transparent border-none p-sm font-code-sm text-code-sm text-secondary-fixed focus:ring-0 resize-none w-full" id="record-json" spellcheck="false">&#123;
+      <textarea className="flex-1 bg-transparent border-none p-sm font-code-sm text-code-sm text-secondary-fixed focus:ring-0 resize-none w-full" id="record-json" spellCheck={false}>&#123;
         "pipeline_id": "auth_flow",
         "version": "1.4.2",
         "enabled": true,
